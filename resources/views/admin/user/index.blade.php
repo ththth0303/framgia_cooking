@@ -6,9 +6,6 @@
     <h1>{{ trans('admin.subcrice') }}</h1>
     <ul class="breadcrumb">
         <i class="ti-server panel-title"></i>
-        <li class="next">
-            <a href="{{ route('admin.') }}">{{ trans('admin.dashboard') }}</a>
-        </li>
     </ul>
 @endsection
 @section('content')

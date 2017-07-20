@@ -65,3 +65,7 @@ Route::post('step/cooking', 'Sites\SubmitCookingController@addStep');
 Route::delete('step/cooking/{id}', 'Sites\SubmitCookingController@deleteStep');
 Route::get('categories/cooking', 'Sites\SubmitCookingController@getCookingCategories');
 Route::post('categories/cooking', 'Sites\SubmitCookingController@storeCookingCategories');
+
+Route::get('search', 'Sites\SearchController@index');
+Route::get('search/name', 'Sites\SearchController@searchName');
+Route::get('search/ingredient', 'Sites\SearchController@searchIngredient');

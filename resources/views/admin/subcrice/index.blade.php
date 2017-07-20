@@ -14,7 +14,7 @@
     <ul class="breadcrumb">
         <i class="ti-server panel-title"></i>
         <li class="next">
-            <a href="{{ route('admin.') }}">{{ trans('admin.dashboard') }}</a>
+            <a href="">{{ trans('admin.dashboard') }}</a>
         </li>
     </ul>
 @endsection
@@ -42,7 +42,7 @@
                                                 <th class="col-md-3">{{ trans('admin.gmail') }}</th>
                                                 <th class="col-md-1">{{ trans('admin.action') }}</th>
                                             </thead>
-                                            <tbody>                       
+                                            <tbody>
                                                 <tr role="row" v-for="item in items">
                                                     <td>@{{ item.id }}</td>
                                                     <td>

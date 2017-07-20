@@ -65,7 +65,7 @@ class CookingController extends Controller
     public function showCooking($id, Request $request)
     {
         if ($request->ajax()) {
-            $allData = $this->cooking->takeListCooking($id, '1');
+            $allData = $this->cooking->takeListCooking($id, '10');
             $response = [
                 'pagination' => [
                 'total'        => $allData->total(),

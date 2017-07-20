@@ -73,4 +73,11 @@ class CookingEloquentRepository extends AbstractEloquentRepository implements Co
             return false;
         }
     }
+
+    public function searchName($name)
+    {
+        return Cooking::where('name', 'like', '%' . $name . '%')
+            ->where('status', 1)
+            ->get();
+    }
 }
