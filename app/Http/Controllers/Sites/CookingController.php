@@ -124,7 +124,6 @@ class CookingController extends Controller
             'cookingIngredients.unit',
             'steps'
         ]);
-
         if ($cooking && $request->ajax()) {
             if ($cooking->status == 0) {
                 if (Auth::check() && Auth::user()->id == $cooking->user->id) {

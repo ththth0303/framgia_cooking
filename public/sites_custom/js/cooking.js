@@ -1,6 +1,6 @@
 axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
-Vue.component('star-rating', VueStarRating.default);
+// Vue.component('star-rating', VueStarRating.default);
 
 var wishlish = new Vue({
     el: '#cooking-detail',

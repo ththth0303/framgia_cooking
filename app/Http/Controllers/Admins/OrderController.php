@@ -76,6 +76,7 @@ class OrderController extends Controller
      */
     public function show($id)
     {
+        // return $id;
         return $this->orderDetail->getByOrder($id, ['cooking']);
     }
 
